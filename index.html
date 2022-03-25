@@ -5,25 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laba</title>
-    <script >
-        let counter = 0;
-        let ending = '';
-        const printFunc = () => {
-            counter++;
-            switch (counter%10) {
-                case 2:
-                case 3:
-                case 4: ending = 'a';
-                        break;
-                default: ending = ''
-                        break;
-            }
-            alert(`Вы нажали на кнопку ${counter} раз${ending}!`);
-        }
-    </script>
+    <link rel="stylesheet" href="style.css"></link>
+    <script defer src="script.js"></script>
 </head>
 <body>
-    <h2>Лучшее место для кнопки — body</h2>
-    <input type="button" value="Кнопка" onclick="printFunc()"/> 
+    <div class="container">
+        <h2 class="header">Лучшее место для кнопки — body</h2>
+        <p class="counter-text">Нажмите на кнопку</p>
+        <input type="button" value="Кнопка" class="btn" onclick="printFunc()"/> 
+    </div>
 </body>
 </html>
